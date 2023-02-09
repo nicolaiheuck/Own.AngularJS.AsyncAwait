@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Async/Await - testing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.10/angular.min.js" integrity="sha512-P9OXv1AmL2WNrBOELfBF99q/Trv29Kk8f25NxC20IyiLmNHyOyYdCAkSNmA3r7e8MZoO+Wg0gs8RpheY5bglDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/dist/app.js"></script>
+    <script src="/node_modules/angular-loader/angular-loader.js"></script>
+</head>
+<body ng-app="test">
+    <div ng-controller="test.detailsController as ctrl">
+        <a href="/src/views/index.html">Home</a>
+        <br>
+        <br>
+        <h1>This is the details page {{ctrl.test}}</h1>
+        <div ng-if="ctrl.title.length > 0">
+            <span ng-class="{'done': ctrl.completed}">{{ctrl.title}}</span>
+        </div>
+    </div>
+    <style>
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
+</body>
+</html>

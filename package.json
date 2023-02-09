@@ -1,0 +1,32 @@
+{
+  "name": "grunt-angularjs-async-await",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Grunt.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "watch": "grunt watcher",
+    "grunt": "grunt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "angular-async-await": "^1.1.2",
+    "babel-plugin-transform-angular-async": "^1.0.4",
+    "babel-preset-es2016": "^6.24.1",
+    "grunt": "^1.6.1",
+    "grunt-babel": "^8.0.0",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "angular-loader": "^1.8.3",
+    "ng-async": "^1.1.0"
+  }
+}

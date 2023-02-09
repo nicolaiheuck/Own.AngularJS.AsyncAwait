@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Async/Await - testing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.10/angular.min.js" integrity="sha512-P9OXv1AmL2WNrBOELfBF99q/Trv29Kk8f25NxC20IyiLmNHyOyYdCAkSNmA3r7e8MZoO+Wg0gs8RpheY5bglDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/dist/app.js"></script>
+</head>
+<body ng-app="test">
+    <div ng-controller="test.indexController as ctrl">
+        <a href="/src/views/details.html">Details</a>
+        <br>
+        <br>
+        <button ng-click="ctrl.onClick()">{{ctrl.buttonText}}</button>
+    </div>
+</body>
+</html>
